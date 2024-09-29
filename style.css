@@ -1,0 +1,139 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #181818;
+}
+h1{
+  color: antiquewhite;
+}
+
+/* Search Bar Styling */
+#search-bar {
+  margin-top: 10px;
+}
+
+#search-input {
+  padding: 10px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#search-button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  background-color: #f5f7fa;
+  color: rgb(14, 13, 13);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  background-color: #a0acb9;
+}
+
+/* Product Section Styling */
+ #products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  
+} 
+
+/* Product Card Styling */
+/* .product {
+   border: 1px solid #ddd; 
+   padding: 15px; 
+  margin: 10px;
+  width: 350px;
+  height: 350px;
+   text-align: center; 
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+} */
+#productS {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+ 
+  text-align: center;
+}
+
+.product img {
+  width: 40%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product h3 {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+.product:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.05); 
+}
+
+/* Button Styling */
+button {
+  padding: 12px 18px;
+  margin-top: 10px;
+  background-color: #080909;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #b1c0b4;
+}
+
+/* Cart Section Styling */
+#cart {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+#cart ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#cart ul li {
+  margin: 10px 0;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  #products {
+      flex-direction: column;
+      align-items: center;
+  }
+
+   .product {
+      width: 90%; 
+      height: 90%;
+  }
+}
